@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navBar3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Project.Controller.RegisterPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view"
+            android:layout_width="401dp"
+            android:layout_height="135dp"
+            android:background="#04bf6c"
+            android:backgroundTint="#04bf6c" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="327dp"
+                android:layout_height="115dp"
+                android:fontFamily="@font/advent_pro_medium"
+                android:gravity="center|top"
+                android:text="Welcome to GOOAALL"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.8" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="141dp"
+                android:layout_height="41dp"
+                android:fontFamily="@font/advent_pro_medium"
+                android:gravity="center"
+                android:text="Sign up"
+                android:textColor="@color/white"
+                android:textSize="35dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.744" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/NameText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="Name"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Name" />
+
+        <EditText
+            android:id="@+id/SurNameText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="SurName"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Surname" />
+
+        <EditText
+            android:id="@+id/EmailText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Email" />
+
+        <EditText
+            android:id="@+id/PasswordText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Password" />
+
+        <EditText
+            android:id="@+id/ConfirmPasswordText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Confirm Password" />
+
+        <EditText
+            android:id="@+id/MobileText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="Mobile No."
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Mobile No." />
+
+        <EditText
+            android:id="@+id/GenderText"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="center"
+            android:hint="Gender"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:text="Gender" />
+
+        <Button
+            android:id="@+id/RegisterButton2"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#04bf6c"
+            android:fontFamily="@font/advent_pro_medium"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Bbutton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="#04bf6c"
+            android:fontFamily="@font/advent_pro_medium"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        /
+    </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/new_nav_header"
+        app:menu="@menu/nav_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

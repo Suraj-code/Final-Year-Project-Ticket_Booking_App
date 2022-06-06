@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navSettings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"/>
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <item
+                android:id="@+id/navLogin"
+                android:icon="@drawable/ic_baseline_login_24"
+                android:title="Login"/>
+
+            <item
+                android:id="@+id/navRegister"
+                android:icon="@drawable/ic_baseline_app_registration_24"
+                android:title="Register"/>
+
+            <item
+                android:id="@+id/navLogout"
+                android:icon="@drawable/ic_baseline_arrow_circle_left_24"
+                android:title="Logout"/>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Administration">
+
+        <menu>
+
+            <item
+                android:id="@+id/navAdmin"
+                android:icon="@drawable/ic_baseline_admin_panel_settings_24"
+                android:title="Admin"/>
+
+        </menu>
+
+    </item>
+
+</menu>
